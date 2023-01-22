@@ -15,7 +15,7 @@ import java.io.Serializable;
 @Builder
 @Log4j2
 @EqualsAndHashCode(of="id")
-//@RequiredArgsConstructor //for inject
+//@RequiredArgsConstructor  //for inject
 
 //Entity
 @Entity

@@ -27,6 +27,7 @@ ResourceBadRequestException
 RegisterDto
 BaseEntity
 RegisterEntity
+IRegisterRepository
 ```
 
 

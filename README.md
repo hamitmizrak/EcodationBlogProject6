@@ -3,10 +3,10 @@
 ![readme](./picture/readme.jpg)
 
 # Ecodation Java Full Stack Developer -6 (29 Ekim  2022)
-* [GitHub](https://github.com/hamitmizrak/EcodationJavaFullStack6)
+* [GitHub](https://github.com/hamitmizrak/EcodationBlogProject6)
 * 
 ### Gereksinimler
-Java 17
+Java 11
 intellij idea Ultimate 
 Visual Studio Code
 Node js

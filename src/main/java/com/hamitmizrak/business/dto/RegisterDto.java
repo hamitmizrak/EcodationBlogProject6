@@ -1,5 +1,6 @@
 package com.hamitmizrak.business.dto;
 
+import com.hamitmizrak.annotation.RegisterUniqueEmail;
 import lombok.*;
 import lombok.extern.log4j.Log4j2;
 
@@ -29,7 +30,7 @@ public class RegisterDto {
     @NotNull(message = "{register.email.validation.constraints.NotNull.message}")
     @Email(message = "{register.email.validation.constraints.property.message}")
     @Size(max = 150,message = "{register.email.validation.constraints.max.message}")
-    //@RegisterUniqueEmail(message="{register.email.validation.constraints.unique.message}")
+    @RegisterUniqueEmail
     private String email;
 
     @NotNull(message = "{register.password.validation.constraints.NotNull.message}")

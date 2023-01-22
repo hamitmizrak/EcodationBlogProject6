@@ -2,6 +2,35 @@
 
 ![readme](./picture/readme.jpg)
 
+
+---
+## RolMap
+
+### Bean
+```sh
+ModelMapper
+PasswordEncoder
+OpenApiConfiguration
+```
+
+### Exception
+```sh
+HamitMizrakException
+ResourceAuthorizedException
+ResourceNotFoundException
+ResourceCreatedException
+ResourceBadRequestException
+```
+
+### 
+```sh
+RegisterDto
+BaseEntity
+RegisterEntity
+```
+
+
+---
 # Ecodation Java Full Stack Developer -6 (29 Ekim  2022)
 * [GitHub](https://github.com/hamitmizrak/EcodationBlogProject6)
 * 

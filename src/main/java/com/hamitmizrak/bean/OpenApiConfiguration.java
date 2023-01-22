@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class OpenApiConfiguration {
 
+    //localhost:4444/swagger-ui.html
     //swagger: API Document
     @Bean
     public OpenAPI openAPIMethod(){
@@ -25,7 +26,6 @@ public class OpenApiConfiguration {
                 .license(new License()
                         .name("Licence ")
                         .url("www."))
-
         );
     }
 }

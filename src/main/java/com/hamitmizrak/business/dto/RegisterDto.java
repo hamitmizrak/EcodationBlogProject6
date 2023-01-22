@@ -19,6 +19,7 @@ import java.util.Date;
 public class RegisterDto {
 
     private Long id;
+
     @NotNull(message = "{register.username.validation.constraints.NotNull.message}")
     private String username;
 
@@ -34,6 +35,10 @@ public class RegisterDto {
     @NotNull(message = "{register.password.validation.constraints.NotNull.message}")
     @Pattern(regexp = "",message = "{register.password.validation.constraints.pattern.regex.message}")
     private String password;
+
+    @NotNull(message = "{register.telephone.validation.constraints.NotNull.message}")
+    @Pattern(regexp = "",message = "{register.telephone.validation.constraints.pattern.regex.message}")
+    private String telephoneNumber;
 
     private Date createdDate;
 }

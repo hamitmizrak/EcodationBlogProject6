@@ -29,7 +29,7 @@
         <maven.compiler.source>11</maven.compiler.source>
     </properties>
 
-
+    <!--dependencies-->
     <dependencies>
         <!--Spring Web Mvc Rest-->
         <dependency>
@@ -142,7 +142,7 @@
         </dependency>
     </dependencies>
 
-
+    <!--build-->
     <build>
         <plugins>
             <!-- for maven -->
@@ -176,5 +176,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

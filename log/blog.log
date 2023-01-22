@@ -1858,3 +1858,6 @@ Unconditional classes:
 2023-01-22 15:49:43.552 DEBUG 4200 --- [http-nio-4444-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
 2023-01-22 15:49:43.553 DEBUG 4200 --- [http-nio-4444-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Jan 22 15:49:43 EET 2023, status=404, error=Not Found, message=No message available,  (truncated)...]
 2023-01-22 15:49:43.571 DEBUG 4200 --- [http-nio-4444-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-01-22 15:51:39.363  INFO 4200 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-22 15:51:39.365  INFO 4200 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-22 15:51:39.368  INFO 4200 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

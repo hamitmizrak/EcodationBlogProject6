@@ -11,11 +11,9 @@ import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 //Lombok
 @RequiredArgsConstructor //injection
@@ -42,8 +40,10 @@ public class RegisterServiceImpl implements IRegisterService {
         return modelMapperBean.modelMapperMethod().map(registerDto, RegisterEntity.class);
     }
 
+
     //CREATE
     @Override
+    @Transactional //Transaction ==> Manipülasyon ==>  Create-Delete-Update
     public RegisterDto registerCreate(RegisterDto registerDto) {
         //Spring Security will masking
         registerDto.setPassword(passwordEncoderBean.passwordEncoderMethod().encode(registerDto.getPassword()));
@@ -66,6 +66,8 @@ public class RegisterServiceImpl implements IRegisterService {
         return registerDtoList;
     }
 
+    //+++++++++++
+    //FIND-UPDATE-DELETE ==> Bu 3 metotta find olmak zorundadır.
     //FIND
     @Override
     public RegisterDto registerFind(Long id) {
@@ -88,13 +90,37 @@ public class RegisterServiceImpl implements IRegisterService {
 
     //UPDATE
     @Override
+    @Transactional //Transaction ==> Manipülasyon ==>  Create-Delete-Update
     public RegisterDto registerUpdate(Long id, RegisterDto registerDto) {
+        //Find
+        RegisterDto dto=  registerFind(id);
+        if(dto!=null){
+            dto.setUsername(registerDto.getUsername());
+            dto.setSurname(registerDto.getSurname());
+            dto.setPassword(passwordEncoderBean.passwordEncoderMethod().encode(registerDto.getPassword()));
+            dto.setEmail(registerDto.getEmail());
+            dto.setTelephoneNumber(registerDto.getTelephoneNumber());
+            //Model Mapper
+            RegisterEntity registerEntity = iRegisterRepository.save(DtoToEntity(dto));
+            iRegisterRepository.save(registerEntity);
+            dto.setId(registerEntity.getId());
+            return dto;
+        }
         return null;
     }
 
     //DELETE
     @Override
+    @Transactional //Transaction ==> Manipülasyon ==>  Create-Delete-Update
     public Map<String, Boolean> RegisterDelete(Long id) {
-        return null;
+        //Find
+        RegisterDto dto=  registerFind(id);
+        RegisterEntity registerEntity = iRegisterRepository.save(DtoToEntity(dto));
+        Map<String,Boolean> response=new LinkedHashMap<>();
+        if(dto!=null){
+            iRegisterRepository.delete(registerEntity);
+            response.put("Deleted",Boolean.TRUE);
+        }
+        return response;
     }
 }

@@ -21,7 +21,7 @@ public class PersistEndPoint {
         "username":"adi",
         "surname":"soyadi",
         "email":"emailsdf44@gmail.com",
-        "password":"Hm1234@",
+        "passwd":"Hm1234@",
         "telephoneNumber":"123-456-7890"
     }
     */
@@ -42,7 +42,7 @@ public class PersistEndPoint {
         "username":"adi2",
         "surname":"soyadi2",
         "email":"email2@gmail.com",
-        "password":"Hm1222@",
+        "passwd":"Hm1222@",
         "telephoneNumber":"123-456-2222"
     }
     */

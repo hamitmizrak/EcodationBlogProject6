@@ -37,7 +37,7 @@ public class RegisterDto {
     // en az 1 sayı, 1 küçük harf, 1 büyük harf 1 tane özel karakter
     //Hm1234@
     @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).*$", message = "{register.password.validation.constraints.pattern.regex.message}")
-    private String password;
+    private String passwd;
 
     /*
      123-456-7890

@@ -46,7 +46,7 @@ public class RegisterServiceImpl implements IRegisterService {
     @Transactional //Transaction ==> Manipülasyon ==>  Create-Delete-Update
     public RegisterDto registerCreate(RegisterDto registerDto) {
         //Spring Security will masking
-        registerDto.setPassword(passwordEncoderBean.passwordEncoderMethod().encode(registerDto.getPassword()));
+        registerDto.setPasswd(passwordEncoderBean.passwordEncoderMethod().encode(registerDto.getPasswd()));
         RegisterEntity registerEntity = iRegisterRepository.save(DtoToEntity(registerDto));
         registerDto.setId(registerEntity.getId());
         return registerDto;
@@ -97,7 +97,7 @@ public class RegisterServiceImpl implements IRegisterService {
         if(dto!=null){
             dto.setUsername(registerDto.getUsername());
             dto.setSurname(registerDto.getSurname());
-            dto.setPassword(passwordEncoderBean.passwordEncoderMethod().encode(registerDto.getPassword()));
+            dto.setPasswd(passwordEncoderBean.passwordEncoderMethod().encode(registerDto.getPasswd()));
             dto.setEmail(registerDto.getEmail());
             dto.setTelephoneNumber(registerDto.getTelephoneNumber());
             //Model Mapper

@@ -112,7 +112,7 @@ public class RegisterServiceImpl implements IRegisterService {
     //DELETE
     @Override
     @Transactional //Transaction ==> Manipülasyon ==>  Create-Delete-Update
-    public Map<String, Boolean> RegisterDelete(Long id) {
+    public Map<String, Boolean> registerDelete(Long id) {
         //Find
         RegisterDto dto=  registerFind(id);
         RegisterEntity registerEntity = iRegisterRepository.save(DtoToEntity(dto));

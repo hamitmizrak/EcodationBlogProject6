@@ -134,3 +134,6 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'us
 2023-01-28 15:45:30.004  INFO 15196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2023-01-28 15:45:30.031  INFO 15196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 4444 (http) with context path ''
 2023-01-28 15:45:30.040  INFO 15196 --- [restartedMain] c.h.EcodationBlogProject6Application     : Started EcodationBlogProject6Application in 3.569 seconds (JVM running for 4.717)
+2023-01-28 18:06:12.236  INFO 15196 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-28 18:06:12.250  INFO 15196 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-28 18:06:12.255  INFO 15196 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

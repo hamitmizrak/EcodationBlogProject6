@@ -35,16 +35,17 @@ public class RegisterDto {
 
     @NotNull(message = "{register.password.validation.constraints.NotNull.message}")
     // en az 1 sayı, 1 küçük harf, 1 büyük harf 1 tane özel karakter
-    /*
-    123-456-7890
-    (123) 456-7890
-    123 456 7890
-    123.456.7890
-    +91 (123) 456-7890
-    */
+    //Hm1234@
     @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).*$", message = "{register.password.validation.constraints.pattern.regex.message}")
     private String password;
 
+    /*
+     123-456-7890
+     (123) 456-7890
+     123 456 7890
+     123.456.7890
+     +91 (123) 456-7890
+     */
     @NotNull(message = "{register.telephone.validation.constraints.NotNull.message}")
     @Pattern(regexp = "^(\\+\\d{1,2}\\s)?\\(?\\d{3}\\)?[\\s.-]\\d{3}[\\s.-]\\d{4}$", message = "{register.telephone.validation.constraints.pattern.regex.message}")
     private String telephoneNumber;

@@ -26,5 +26,5 @@ public interface IRegisterService {
     public RegisterDto registerUpdate(Long id, RegisterDto registerDto);
 
     //DELETE
-    public Map<String, Boolean> RegisterDelete(Long id);
+    public Map<String, Boolean> registerDelete(Long id);
 }

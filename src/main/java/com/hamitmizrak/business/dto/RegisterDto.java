@@ -29,16 +29,24 @@ public class RegisterDto {
 
     @NotNull(message = "{register.email.validation.constraints.NotNull.message}")
     @Email(message = "{register.email.validation.constraints.property.message}")
-    @Size(max = 150,message = "{register.email.validation.constraints.max.message}")
+    @Size(max = 150, message = "{register.email.validation.constraints.max.message}")
     @RegisterUniqueEmail
     private String email;
 
     @NotNull(message = "{register.password.validation.constraints.NotNull.message}")
-    @Pattern(regexp = "",message = "{register.password.validation.constraints.pattern.regex.message}")
+    // en az 1 sayı, 1 küçük harf, 1 büyük harf 1 tane özel karakter
+    /*
+    123-456-7890
+    (123) 456-7890
+    123 456 7890
+    123.456.7890
+    +91 (123) 456-7890
+    */
+    @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).*$", message = "{register.password.validation.constraints.pattern.regex.message}")
     private String password;
 
     @NotNull(message = "{register.telephone.validation.constraints.NotNull.message}")
-    @Pattern(regexp = "",message = "{register.telephone.validation.constraints.pattern.regex.message}")
+    @Pattern(regexp = "^(\\+\\d{1,2}\\s)?\\(?\\d{3}\\)?[\\s.-]\\d{3}[\\s.-]\\d{4}$", message = "{register.telephone.validation.constraints.pattern.regex.message}")
     private String telephoneNumber;
 
     private Date createdDate;

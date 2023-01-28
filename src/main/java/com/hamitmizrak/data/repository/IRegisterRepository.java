@@ -4,7 +4,7 @@ import com.hamitmizrak.data.entity.RegisterEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-//Spring 2.2. then @Repository yazmak zorunda değiliz. ama bizler yazalım
+// Spring 2.2. then @Repository yazmak zorunda değiliz. ama bizler yazalım.
 @Repository
 public interface IRegisterRepository extends JpaRepository<RegisterEntity,Long> {
 

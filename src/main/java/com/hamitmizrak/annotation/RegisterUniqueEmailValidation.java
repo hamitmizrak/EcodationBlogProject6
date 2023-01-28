@@ -17,7 +17,8 @@ public class RegisterUniqueEmailValidation implements ConstraintValidator<Regist
     @Override
     public boolean isValid(String email, ConstraintValidatorContext constraintValidatorContext) {
         RegisterEntity registerEntity=iRegisterRepository.findByEmail(email);
-        //eğer böyle bir email varsa sistemde return false
+        //Amaç: aynı email adresine sahip başka birisi sisteme giriş yapamazsın.
+        //eğer sistemde böyle bir email varsa sistemde return false olarak dönsün
         if(registerEntity!=null)
             return  false;
         return true;

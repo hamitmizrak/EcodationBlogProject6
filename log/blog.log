@@ -2011,3 +2011,125 @@ Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is alrea
 2023-01-28 20:44:44.120  INFO 20936 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-01-28 20:44:44.124  INFO 20936 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-01-28 20:44:44.127  INFO 20936 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-28 20:44:57.062  INFO 2820 --- [restartedMain] c.h.EcodationBlogProject6Application     : Starting EcodationBlogProject6Application using Java 11.0.16.1 on DESKTOP-ITI8U8K with PID 2820 (D:\spring\EcodationBlogProject6\target\classes started by 90553 in D:\spring\EcodationBlogProject6)
+2023-01-28 20:44:57.063  INFO 2820 --- [restartedMain] c.h.EcodationBlogProject6Application     : The following 1 profile is active: "frontend"
+2023-01-28 20:44:57.104  INFO 2820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-28 20:44:57.105  INFO 2820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-28 20:44:57.676  INFO 2820 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-28 20:44:57.713  INFO 2820 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interfaces.
+2023-01-28 20:44:58.170  INFO 2820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 4444 (http)
+2023-01-28 20:44:58.176  INFO 2820 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-28 20:44:58.176  INFO 2820 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-01-28 20:44:58.242  INFO 2820 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-28 20:44:58.242  INFO 2820 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1137 ms
+2023-01-28 20:44:58.261  INFO 2820 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-28 20:44:58.356  INFO 2820 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-28 20:44:58.365  INFO 2820 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/employee_database'
+2023-01-28 20:44:58.390 DEBUG 2820 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-01-28 20:44:59.060  INFO 2820 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-28 20:44:59.484  WARN 2820 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-28 20:44:59.562 DEBUG 2820 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-01-28 20:44:59.585  INFO 2820 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-01-28 20:44:59.621 DEBUG 2820 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2023-01-28 20:44:59.892 DEBUG 2820 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/swagger-ui*/**] in 'resourceHandlerMapping'
+2023-01-28 20:44:59.900 DEBUG 2820 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-01-28 20:45:00.040  INFO 2820 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-01-28 20:45:00.069  INFO 2820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 4444 (http) with context path ''
+2023-01-28 20:45:00.079  INFO 2820 --- [restartedMain] c.h.EcodationBlogProject6Application     : Started EcodationBlogProject6Application in 3.361 seconds (JVM running for 4.686)
+2023-01-28 20:45:14.257  INFO 2820 --- [http-nio-4444-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-28 20:45:14.258  INFO 2820 --- [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-28 20:45:14.258 DEBUG 2820 --- [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-01-28 20:45:14.259 DEBUG 2820 --- [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-01-28 20:45:14.259 DEBUG 2820 --- [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-01-28 20:45:14.260 DEBUG 2820 --- [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2688152a
+2023-01-28 20:45:14.260 DEBUG 2820 --- [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2825f465
+2023-01-28 20:45:14.260 DEBUG 2820 --- [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-01-28 20:45:14.261  INFO 2820 --- [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-01-28 20:45:14.272 DEBUG 2820 --- [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/register/list", parameters={}
+2023-01-28 20:45:14.278 DEBUG 2820 --- [http-nio-4444-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hamitmizrak.controller.api.impl.RegisterApiImpl#apiRegisterList()
+2023-01-28 20:45:14.438 DEBUG 2820 --- [http-nio-4444-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-28 20:45:14.439 DEBUG 2820 --- [http-nio-4444-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[]]
+2023-01-28 20:45:14.459 DEBUG 2820 --- [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-28 20:45:22.053 DEBUG 2820 --- [http-nio-4444-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/register/create", parameters={}
+2023-01-28 20:45:22.054 DEBUG 2820 --- [http-nio-4444-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hamitmizrak.controller.api.impl.RegisterApiImpl#apiRegisterCreate(RegisterDto)
+2023-01-28 20:45:22.123 DEBUG 2820 --- [http-nio-4444-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RegisterDto(id=null, username=sdf, surname=sdadsasd, email=emailsdf44@gmail.com, passwd=null, teleph (truncated)...]
+2023-01-28 20:45:22.227  WARN 2820 --- [http-nio-4444-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.hamitmizrak.controller.api.impl.RegisterApiImpl.apiRegisterCreate(com.hamitmizrak.business.dto.RegisterDto): [Field error in object 'registerDto' on field 'passwd': rejected value [null]; codes [NotNull.registerDto.passwd,NotNull.passwd,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerDto.passwd,passwd]; arguments []; default message [passwd]]; default message [password cannot be null]] ]
+2023-01-28 20:45:22.227 DEBUG 2820 --- [http-nio-4444-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2023-01-28 20:45:22.229 DEBUG 2820 --- [http-nio-4444-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2023-01-28 20:45:22.230 DEBUG 2820 --- [http-nio-4444-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hamitmizrak.error.CustomErrorHandleWebRequest#handleError(WebRequest)
+2023-01-28 20:45:22.242 DEBUG 2820 --- [http-nio-4444-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-28 20:45:22.252 DEBUG 2820 --- [http-nio-4444-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResult(status=400, error=null, message=Validation failed for object='registerDto'. Error count: 1 (truncated)...]
+2023-01-28 20:45:22.259 DEBUG 2820 --- [http-nio-4444-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2023-01-28 20:45:39.468 DEBUG 2820 --- [http-nio-4444-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/register/create", parameters={}
+2023-01-28 20:45:39.469 DEBUG 2820 --- [http-nio-4444-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hamitmizrak.controller.api.impl.RegisterApiImpl#apiRegisterCreate(RegisterDto)
+2023-01-28 20:45:39.470 DEBUG 2820 --- [http-nio-4444-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RegisterDto(id=null, username=sdf, surname=sdadsasd, email=emailsdf44@gmail.com, passwd=Hm1234@, tel (truncated)...]
+2023-01-28 20:45:39.672 DEBUG 2820 --- [http-nio-4444-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-28 20:45:39.672 DEBUG 2820 --- [http-nio-4444-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [RegisterDto(id=1, username=sdf, surname=sdadsasd, email=emailsdf44@gmail.com, passwd=$2a$10$YOgKBwf4 (truncated)...]
+2023-01-28 20:45:39.673 DEBUG 2820 --- [http-nio-4444-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-28 20:46:18.360 DEBUG 2820 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2023-01-28 20:46:18.364 DEBUG 2820 --- [http-nio-4444-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-01-28 20:46:18.368 DEBUG 2820 --- [http-nio-4444-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-01-28 20:46:18.368 DEBUG 2820 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-01-28 20:46:18.369 DEBUG 2820 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-01-28 20:46:18.369 DEBUG 2820 --- [http-nio-4444-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hamitmizrak.error.CustomErrorHandleWebRequest#handleError(WebRequest)
+2023-01-28 20:46:18.371 DEBUG 2820 --- [http-nio-4444-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-28 20:46:18.371 DEBUG 2820 --- [http-nio-4444-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResult(status=404, error=null, message=No message available, path=/favicon.ico, date=Sat Jan 28 2 (truncated)...]
+2023-01-28 20:46:18.389 DEBUG 2820 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-01-28 21:17:50.323 DEBUG 2820 --- [http-nio-4444-exec-4] o.s.web.servlet.DispatcherServlet        : PUT "/register/1", parameters={}
+2023-01-28 21:17:50.323 DEBUG 2820 --- [http-nio-4444-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hamitmizrak.controller.api.impl.RegisterApiImpl#apiRegisterUpdate(Long, RegisterDto)
+2023-01-28 21:17:50.330 DEBUG 2820 --- [http-nio-4444-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RegisterDto(id=null, username=adi44, surname=soyadi44, email=email44@gmail.com, passwd=null, telepho (truncated)...]
+2023-01-28 21:17:50.333  WARN 2820 --- [http-nio-4444-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.hamitmizrak.business.dto.RegisterDto> com.hamitmizrak.controller.api.impl.RegisterApiImpl.apiRegisterUpdate(java.lang.Long,com.hamitmizrak.business.dto.RegisterDto): [Field error in object 'registerDto' on field 'passwd': rejected value [null]; codes [NotNull.registerDto.passwd,NotNull.passwd,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerDto.passwd,passwd]; arguments []; default message [passwd]]; default message [password cannot be null]] ]
+2023-01-28 21:17:50.334 DEBUG 2820 --- [http-nio-4444-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2023-01-28 21:17:50.335 DEBUG 2820 --- [http-nio-4444-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for PUT "/error", parameters={}
+2023-01-28 21:17:50.335 DEBUG 2820 --- [http-nio-4444-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hamitmizrak.error.CustomErrorHandleWebRequest#handleError(WebRequest)
+2023-01-28 21:17:50.336 DEBUG 2820 --- [http-nio-4444-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-28 21:17:50.336 DEBUG 2820 --- [http-nio-4444-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResult(status=400, error=null, message=Validation failed for object='registerDto'. Error count: 1 (truncated)...]
+2023-01-28 21:17:50.338 DEBUG 2820 --- [http-nio-4444-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2023-01-28 21:18:03.023 DEBUG 2820 --- [http-nio-4444-exec-3] o.s.web.servlet.DispatcherServlet        : PUT "/register/1", parameters={}
+2023-01-28 21:18:03.024 DEBUG 2820 --- [http-nio-4444-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hamitmizrak.controller.api.impl.RegisterApiImpl#apiRegisterUpdate(Long, RegisterDto)
+2023-01-28 21:18:03.025 DEBUG 2820 --- [http-nio-4444-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RegisterDto(id=null, username=adi44, surname=soyadi44, email=email44@gmail.com, passwd=null, telepho (truncated)...]
+2023-01-28 21:18:03.027  WARN 2820 --- [http-nio-4444-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.hamitmizrak.business.dto.RegisterDto> com.hamitmizrak.controller.api.impl.RegisterApiImpl.apiRegisterUpdate(java.lang.Long,com.hamitmizrak.business.dto.RegisterDto): [Field error in object 'registerDto' on field 'passwd': rejected value [null]; codes [NotNull.registerDto.passwd,NotNull.passwd,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerDto.passwd,passwd]; arguments []; default message [passwd]]; default message [password cannot be null]] ]
+2023-01-28 21:18:03.028 DEBUG 2820 --- [http-nio-4444-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2023-01-28 21:18:03.028 DEBUG 2820 --- [http-nio-4444-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for PUT "/error", parameters={}
+2023-01-28 21:18:03.028 DEBUG 2820 --- [http-nio-4444-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hamitmizrak.error.CustomErrorHandleWebRequest#handleError(WebRequest)
+2023-01-28 21:18:03.029 DEBUG 2820 --- [http-nio-4444-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-28 21:18:03.030 DEBUG 2820 --- [http-nio-4444-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResult(status=400, error=null, message=Validation failed for object='registerDto'. Error count: 1 (truncated)...]
+2023-01-28 21:18:03.031 DEBUG 2820 --- [http-nio-4444-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2023-01-28 21:18:12.149 DEBUG 2820 --- [http-nio-4444-exec-4] o.s.web.servlet.DispatcherServlet        : PUT "/register/1", parameters={}
+2023-01-28 21:18:12.150 DEBUG 2820 --- [http-nio-4444-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hamitmizrak.controller.api.impl.RegisterApiImpl#apiRegisterUpdate(Long, RegisterDto)
+2023-01-28 21:18:12.151 DEBUG 2820 --- [http-nio-4444-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RegisterDto(id=null, username=adi44, surname=soyadi44, email=email44@gmail.com, passwd=Hm144@, telep (truncated)...]
+2023-01-28 21:18:23.524  INFO 2820 --- [http-nio-4444-exec-4] c.h.controller.api.impl.RegisterApiImpl  : Veriler: RegisterDto(id=1, username=adi44, surname=soyadi44, email=email44@gmail.com, passwd=$2a$10$A.MlGquLeVsJPAOvg9k0xOkACzssrTLHt4YOYDOXxCi7t6v.0GVQG, telephoneNumber=123-456-4444, createdDate=2023-01-28 23:15:39.628)
+2023-01-28 21:18:28.766 DEBUG 2820 --- [http-nio-4444-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-01-28 21:18:28.766 DEBUG 2820 --- [http-nio-4444-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [RegisterDto(id=1, username=adi44, surname=soyadi44, email=email44@gmail.com, passwd=$2a$10$LhDwqcvCb (truncated)...]
+2023-01-28 21:18:28.767 DEBUG 2820 --- [http-nio-4444-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-01-28 21:22:38.204  INFO 2820 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-28 21:22:38.207  INFO 2820 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-28 21:22:38.210  INFO 2820 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-28 21:22:46.944  INFO 11448 --- [restartedMain] c.h.EcodationBlogProject6Application     : Starting EcodationBlogProject6Application using Java 11.0.16.1 on DESKTOP-ITI8U8K with PID 11448 (D:\spring\EcodationBlogProject6\target\classes started by 90553 in D:\spring\EcodationBlogProject6)
+2023-01-28 21:22:46.945  INFO 11448 --- [restartedMain] c.h.EcodationBlogProject6Application     : The following 1 profile is active: "frontend"
+2023-01-28 21:22:47.001  INFO 11448 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-28 21:22:47.001  INFO 11448 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-28 21:22:47.676  INFO 11448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-28 21:22:47.716  INFO 11448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interfaces.
+2023-01-28 21:22:48.213  INFO 11448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 4444 (http)
+2023-01-28 21:22:48.219  INFO 11448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-28 21:22:48.220  INFO 11448 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-01-28 21:22:48.289  INFO 11448 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-28 21:22:48.289  INFO 11448 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1287 ms
+2023-01-28 21:22:48.312  INFO 11448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-28 21:22:48.459  INFO 11448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-28 21:22:48.473  INFO 11448 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/employee_database'
+2023-01-28 21:22:48.504 DEBUG 11448 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-01-28 21:22:49.219  INFO 11448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-28 21:22:49.575  WARN 11448 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-28 21:22:49.652 DEBUG 11448 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-01-28 21:22:49.669  INFO 11448 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-01-28 21:22:49.701 DEBUG 11448 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2023-01-28 21:22:49.962 DEBUG 11448 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/swagger-ui*/**] in 'resourceHandlerMapping'
+2023-01-28 21:22:49.968 DEBUG 11448 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-01-28 21:22:50.103  INFO 11448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-01-28 21:22:50.129  INFO 11448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 4444 (http) with context path ''
+2023-01-28 21:22:50.139  INFO 11448 --- [restartedMain] c.h.EcodationBlogProject6Application     : Started EcodationBlogProject6Application in 3.546 seconds (JVM running for 4.941)
+2023-01-28 23:04:11.333  INFO 11448 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-28 23:04:11.337  INFO 11448 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-28 23:04:11.339  INFO 11448 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

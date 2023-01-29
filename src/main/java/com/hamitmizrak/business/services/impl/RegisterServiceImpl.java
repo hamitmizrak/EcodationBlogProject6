@@ -90,7 +90,7 @@ public class RegisterServiceImpl implements IRegisterService {
 
     //UPDATE
     @Override
-    @Transactional //Transaction ==> Manipülasyon ==>  Create-Delete-Update
+    //@Transactional //Transaction ==> Manipülasyon ==>  Create-Delete-Update
     public RegisterDto registerUpdate(Long id, RegisterDto registerDto) {
         //Find
         RegisterDto dto=  registerFind(id);
@@ -104,9 +104,8 @@ public class RegisterServiceImpl implements IRegisterService {
             RegisterEntity registerEntity = iRegisterRepository.save(DtoToEntity(dto));
             iRegisterRepository.save(registerEntity);
             dto.setId(registerEntity.getId());
-            return dto;
         }
-        return null;
+        return dto;
     }
 
     //DELETE

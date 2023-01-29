@@ -42,13 +42,13 @@ abstract public class BaseEntity implements Serializable {
     //audit
     //Kim oluşturdu
    @CreatedBy
-    @Column(name="created_user")
+    @Column(name="created_user",updatable = false)
     private String createdBy;
 
     //Kim ne zaman oluşturdu
-    @Column(name="created_date")
+    @Column(name="created_date",updatable = false)
     @CreatedDate
-    private Date createdUserDate;
+    private Date createdDate;
 
     //Kim güncelledi
     @LastModifiedBy
@@ -58,5 +58,5 @@ abstract public class BaseEntity implements Serializable {
     //Kim ne zaman oluşturdu
     @Column(name="updated_date")
     @LastModifiedDate
-    private Date updatedUserDate;
+    private Date updatedDate;
 }
